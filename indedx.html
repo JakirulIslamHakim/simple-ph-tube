@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH Tube</title>
+</head>
+<link rel="shortcut icon" href="./Logo.png" type="image/x-icon">
+<!-- daisy ui link -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<body class="container mx-auto my-7 ">
+    <header>
+        <section class="flex justify-between">
+            <img src="./Logo.png" alt="">
+            <button class="btn">Sort by view</button>
+            <button onclick="blogBtn()" class="btn hover:bg-red-700 bg-red-500 text-white px-5 py-1">Blog</button>
+        </section>
+    </header>
+    <main>
+        <section>
+            <div id="category-name-section" class="tabs flex justify-center my-20 ">
+           
+            </div>
+        </section>
+
+        <!-- content section -->
+        <section>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-10" id="video-card">
+
+            </div>
+        </section>
+
+        <!--when empty array  -->
+        <section class="hidden" id="empty-content">
+            <div class="flex justify-center ">
+                <img class="" src="./Icon.png" alt="">
+            </div>
+            <h3 class="text-3xl text-center my-6 font-bold">Oops!! Sorry, There is no content here</h3>
+        </section>
+
+    </main>
+    <footer>
+    </footer>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
